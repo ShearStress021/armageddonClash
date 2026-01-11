@@ -4,12 +4,14 @@
 
 namespace game {
 
-	Character::Character(int w, int h) :
+	Character::Character(int w, int h):
+
 		windowWidth(w),
 		windowHeight(h)
 	{
 		width = tex.width/ maxFrames;
 		height = tex.height;
+		state = CharacterState::idle;
 
 	}
 
@@ -36,7 +38,9 @@ namespace game {
 
 		{
 			worldPosition = Vector2Add(worldPosition, Vector2Scale(Vector2Normalize(velocity), speed));
+			velocity.x < 0.f ? leftRight = -1.f : leftRight = 1.f;
 			tex = texRun;
+
 		}
 		else 
 		{
@@ -45,10 +49,10 @@ namespace game {
 
 
 		Rectangle src {
-			.x = static_cast<float>(width) * frame,
-			.y = 0,
-			.width = static_cast<float>(width),
-			.height = height/1.f
+			static_cast<float>(width) * frame,
+			0,
+			static_cast<float>(width) * leftRight,
+			height/1.f
 
 		};
 
@@ -60,11 +64,6 @@ namespace game {
 		};
 		Vector2 origin {};
 		
-
-
-		
-
-
 		velocity = {};
 		DrawTexturePro(tex, src ,dest,origin,0.f,WHITE);
 
@@ -73,11 +72,14 @@ namespace game {
 	}
 
 	Vector2 Character::getCharacterPosition(){
-		return Vector2{
-			static_cast<float>(windowWidth)/2.f - width,
-			static_cast<float>(windowHeight) - (height * scale)
+		return characterPosition;
 
-		};
+	}
+
+	void Character::setCharacterPosition(Vector2 pos)
+	{
+		
+		characterPosition = pos;
 	}
 
 

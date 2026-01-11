@@ -2,9 +2,10 @@ CMakeFiles/res.dir/src/main.cpp.o: \
  /home/kanja/projects/armageddonClash/src/main.cpp \
  /usr/include/stdc-predef.h \
  /home/kanja/projects/armageddonClash/src/lve_window.h \
- /home/kanja/projects/armageddonClash/src/game_window.h \
+ /home/kanja/projects/armageddonClash/src/character.h \
  /usr/local/include/raylib.h \
  /usr/lib/gcc/x86_64-linux-gnu/14/include/stdarg.h \
+ /home/kanja/projects/armageddonClash/src/game_window.h \
  /usr/include/c++/14/string /usr/include/c++/14/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/14/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/14/bits/os_defines.h \
