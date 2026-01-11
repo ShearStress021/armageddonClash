@@ -16,9 +16,11 @@ namespace game {
 	void GameWindow::initWindow()
 	{
 		InitWindow(width, height,gameName.c_str());
+		SetTargetFPS(60);
 
 	}
 	GameWindow::~GameWindow(){
+		 
 		CloseWindow();
 	}
 		

@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/kanja/projects/armageddonClash/src/character.cpp" "CMakeFiles/res.dir/src/character.cpp.o" "gcc" "CMakeFiles/res.dir/src/character.cpp.o.d"
   "/home/kanja/projects/armageddonClash/src/game_window.cpp" "CMakeFiles/res.dir/src/game_window.cpp.o" "gcc" "CMakeFiles/res.dir/src/game_window.cpp.o.d"
   "/home/kanja/projects/armageddonClash/src/lve_window.cpp" "CMakeFiles/res.dir/src/lve_window.cpp.o" "gcc" "CMakeFiles/res.dir/src/lve_window.cpp.o.d"
   "/home/kanja/projects/armageddonClash/src/main.cpp" "CMakeFiles/res.dir/src/main.cpp.o" "gcc" "CMakeFiles/res.dir/src/main.cpp.o.d"
