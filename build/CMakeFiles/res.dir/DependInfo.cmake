@@ -12,7 +12,6 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/kanja/projects/armageddonClash/src/game_window.cpp" "CMakeFiles/res.dir/src/game_window.cpp.o" "gcc" "CMakeFiles/res.dir/src/game_window.cpp.o.d"
   "/home/kanja/projects/armageddonClash/src/lve_window.cpp" "CMakeFiles/res.dir/src/lve_window.cpp.o" "gcc" "CMakeFiles/res.dir/src/lve_window.cpp.o.d"
   "/home/kanja/projects/armageddonClash/src/main.cpp" "CMakeFiles/res.dir/src/main.cpp.o" "gcc" "CMakeFiles/res.dir/src/main.cpp.o.d"
-  "" "res" "gcc" "CMakeFiles/res.dir/link.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

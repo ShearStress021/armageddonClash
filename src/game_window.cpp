@@ -17,6 +17,8 @@ namespace game {
 	{
 		InitWindow(width, height,gameName.c_str());
 		SetTargetFPS(60);
+		Camera2D camera{0};
+//		camera.target = 
 
 	}
 	GameWindow::~GameWindow(){

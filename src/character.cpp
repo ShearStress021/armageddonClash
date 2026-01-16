@@ -24,6 +24,7 @@ namespace game {
 
 		if (IsKeyDown(KEY_A)) velocity.x -= 1.0;
 		if (IsKeyDown(KEY_D)) velocity.x += 1.0;
+		if (IsKeyDown(KEY_SPACE)) velocity.y += 600;
 
 		runningTime += deltaTime;
 

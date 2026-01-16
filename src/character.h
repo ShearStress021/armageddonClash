@@ -26,6 +26,8 @@ namespace game {
 			int height{};
 			CharacterState state{};
 			float leftRight{-1.f};
+			bool IsGround{false};
+			const float jumpingDistance{-600};
 			Vector2 characterPosition{};
 			
 		public:
@@ -35,6 +37,7 @@ namespace game {
 			Texture2D tex{LoadTexture("data/idle.png")};
 			void drawCharacter(float deltaTime);
 			void setCharacterPosition(Vector2 pos);
+			bool IsOnGround();
 			int getWidth();
 			int getHeight();
 			~Character();
