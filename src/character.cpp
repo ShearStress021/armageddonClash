@@ -22,9 +22,75 @@ namespace game {
 	
 	void Character::drawCharacter(float deltaTime){
 
+
+
 		if (IsKeyDown(KEY_A)) velocity.x -= 1.0;
 		if (IsKeyDown(KEY_D)) velocity.x += 1.0;
-		if (IsKeyDown(KEY_SPACE)) velocity.y += 600;
+		if (IsKeyPressed(KEY_SPACE) && !isInAir) velocity.y += jumpingDistance;
+		
+//		Vector2 playerPosition{};
+
+
+		switch (state) {
+
+
+			case game::CharacterState::idle:
+				{
+
+					if(Vector2Length(velocity) != 0.0){
+
+						if(IsOnGround())
+						{
+							velocity.y = 0;
+							isInAir = false;
+
+						}
+						else 
+						{
+							isInAir = true;
+							velocity.y += gravity * deltaTime;
+							state = CharacterState::jumping;
+						}
+						playerPosition = Vector2Scale(Vector2Normalize(velocity), speed);
+						velocity.x < 0.f ? leftRight = -1.f : leftRight = 1.f;
+						state = CharacterState::running;
+						tex = texRun;
+
+					}
+					
+					else 
+					{
+						state = CharacterState::idle;
+						tex = texIdle;
+					}
+
+					break;
+
+				}
+			case CharacterState::running:
+				{
+					if(Vector2Length(velocity) == 0){
+						state = CharacterState::idle;
+						tex = texIdle;
+
+					}
+					break;
+				}
+
+			case CharacterState::jumping:
+				{
+					if(!IsOnGround())
+					{
+						state = CharacterState::running;
+						tex = texRun;
+
+					}
+				}
+
+		
+		}
+
+	
 
 		runningTime += deltaTime;
 
@@ -35,17 +101,22 @@ namespace game {
 			if (frame >  maxFrames) frame = 0;
 		}
 
-		if (Vector2Length(velocity) != 0.0)
-
-		{
-			worldPosition = Vector2Add(worldPosition, Vector2Scale(Vector2Normalize(velocity), speed));
-			velocity.x < 0.f ? leftRight = -1.f : leftRight = 1.f;
-			tex = texRun;
-
-		}
-		else 
-		{
-			tex = texIdle;
+//		if (Vector2Length(velocity) != 0.0)
+//		{
+//			worldPosition = Vector2Add(worldPosition, Vector2Scale(Vector2Normalize(velocity), speed));
+//			velocity.x < 0.f ? leftRight = -1.f : leftRight = 1.f;
+//			tex = texRun;
+//		}
+//		else 
+//		{
+//			tex = texIdle;
+//		}
+//
+//		if (isInAir){
+//		   worldPosition.y += (gravity * deltaTime);
+//		}
+		if (Vector2Length(velocity) != 0){
+			worldPosition = Vector2Add(worldPosition, playerPosition);
 		}
 
 
@@ -81,6 +152,11 @@ namespace game {
 	{
 		
 		characterPosition = pos;
+	}
+
+	bool Character::IsOnGround()
+	{
+		return characterPosition.y >= windowHeight - tex.height;
 	}
 
 
