@@ -25,8 +25,9 @@ namespace game {
 			int width{};
 			int height{};
 			CharacterState state{};
+			float gravity{1000};
 			float leftRight{-1.f};
-			bool IsGround{false};
+			bool isInAir{false};
 			const float jumpingDistance{-600};
 			Vector2 characterPosition{};
 			
@@ -34,6 +35,7 @@ namespace game {
 			Character(int w, int h);
 			Vector2 getCharacterPosition();
 			Vector2 getWorldPosition();
+			Vector2 playerPosition{};
 			Texture2D tex{LoadTexture("data/idle.png")};
 			void drawCharacter(float deltaTime);
 			void setCharacterPosition(Vector2 pos);
