@@ -129,77 +129,29 @@ res/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/res.dir/build.make CMakeFiles/res.dir/build
 .PHONY : res/fast
 
-src/character.o: src/character.cpp.o
-.PHONY : src/character.o
+src/baseCharacter.o: src/baseCharacter.cpp.o
+.PHONY : src/baseCharacter.o
 
 # target to build an object file
-src/character.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/res.dir/build.make CMakeFiles/res.dir/src/character.cpp.o
-.PHONY : src/character.cpp.o
+src/baseCharacter.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/res.dir/build.make CMakeFiles/res.dir/src/baseCharacter.cpp.o
+.PHONY : src/baseCharacter.cpp.o
 
-src/character.i: src/character.cpp.i
-.PHONY : src/character.i
-
-# target to preprocess a source file
-src/character.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/res.dir/build.make CMakeFiles/res.dir/src/character.cpp.i
-.PHONY : src/character.cpp.i
-
-src/character.s: src/character.cpp.s
-.PHONY : src/character.s
-
-# target to generate assembly for a file
-src/character.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/res.dir/build.make CMakeFiles/res.dir/src/character.cpp.s
-.PHONY : src/character.cpp.s
-
-src/game_window.o: src/game_window.cpp.o
-.PHONY : src/game_window.o
-
-# target to build an object file
-src/game_window.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/res.dir/build.make CMakeFiles/res.dir/src/game_window.cpp.o
-.PHONY : src/game_window.cpp.o
-
-src/game_window.i: src/game_window.cpp.i
-.PHONY : src/game_window.i
+src/baseCharacter.i: src/baseCharacter.cpp.i
+.PHONY : src/baseCharacter.i
 
 # target to preprocess a source file
-src/game_window.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/res.dir/build.make CMakeFiles/res.dir/src/game_window.cpp.i
-.PHONY : src/game_window.cpp.i
+src/baseCharacter.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/res.dir/build.make CMakeFiles/res.dir/src/baseCharacter.cpp.i
+.PHONY : src/baseCharacter.cpp.i
 
-src/game_window.s: src/game_window.cpp.s
-.PHONY : src/game_window.s
-
-# target to generate assembly for a file
-src/game_window.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/res.dir/build.make CMakeFiles/res.dir/src/game_window.cpp.s
-.PHONY : src/game_window.cpp.s
-
-src/lve_window.o: src/lve_window.cpp.o
-.PHONY : src/lve_window.o
-
-# target to build an object file
-src/lve_window.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/res.dir/build.make CMakeFiles/res.dir/src/lve_window.cpp.o
-.PHONY : src/lve_window.cpp.o
-
-src/lve_window.i: src/lve_window.cpp.i
-.PHONY : src/lve_window.i
-
-# target to preprocess a source file
-src/lve_window.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/res.dir/build.make CMakeFiles/res.dir/src/lve_window.cpp.i
-.PHONY : src/lve_window.cpp.i
-
-src/lve_window.s: src/lve_window.cpp.s
-.PHONY : src/lve_window.s
+src/baseCharacter.s: src/baseCharacter.cpp.s
+.PHONY : src/baseCharacter.s
 
 # target to generate assembly for a file
-src/lve_window.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/res.dir/build.make CMakeFiles/res.dir/src/lve_window.cpp.s
-.PHONY : src/lve_window.cpp.s
+src/baseCharacter.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/res.dir/build.make CMakeFiles/res.dir/src/baseCharacter.cpp.s
+.PHONY : src/baseCharacter.cpp.s
 
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
@@ -234,15 +186,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... res"
-	@echo "... src/character.o"
-	@echo "... src/character.i"
-	@echo "... src/character.s"
-	@echo "... src/game_window.o"
-	@echo "... src/game_window.i"
-	@echo "... src/game_window.s"
-	@echo "... src/lve_window.o"
-	@echo "... src/lve_window.i"
-	@echo "... src/lve_window.s"
+	@echo "... src/baseCharacter.o"
+	@echo "... src/baseCharacter.i"
+	@echo "... src/baseCharacter.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

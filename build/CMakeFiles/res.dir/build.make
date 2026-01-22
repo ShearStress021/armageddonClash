@@ -69,52 +69,24 @@ include CMakeFiles/res.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/res.dir/flags.make
 
-CMakeFiles/res.dir/src/character.cpp.o: CMakeFiles/res.dir/flags.make
-CMakeFiles/res.dir/src/character.cpp.o: /home/kanja/projects/armageddonClash/src/character.cpp
-CMakeFiles/res.dir/src/character.cpp.o: CMakeFiles/res.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kanja/projects/armageddonClash/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/res.dir/src/character.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/res.dir/src/character.cpp.o -MF CMakeFiles/res.dir/src/character.cpp.o.d -o CMakeFiles/res.dir/src/character.cpp.o -c /home/kanja/projects/armageddonClash/src/character.cpp
+CMakeFiles/res.dir/src/baseCharacter.cpp.o: CMakeFiles/res.dir/flags.make
+CMakeFiles/res.dir/src/baseCharacter.cpp.o: /home/kanja/projects/armageddonClash/src/baseCharacter.cpp
+CMakeFiles/res.dir/src/baseCharacter.cpp.o: CMakeFiles/res.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kanja/projects/armageddonClash/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/res.dir/src/baseCharacter.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/res.dir/src/baseCharacter.cpp.o -MF CMakeFiles/res.dir/src/baseCharacter.cpp.o.d -o CMakeFiles/res.dir/src/baseCharacter.cpp.o -c /home/kanja/projects/armageddonClash/src/baseCharacter.cpp
 
-CMakeFiles/res.dir/src/character.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/res.dir/src/character.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kanja/projects/armageddonClash/src/character.cpp > CMakeFiles/res.dir/src/character.cpp.i
+CMakeFiles/res.dir/src/baseCharacter.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/res.dir/src/baseCharacter.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kanja/projects/armageddonClash/src/baseCharacter.cpp > CMakeFiles/res.dir/src/baseCharacter.cpp.i
 
-CMakeFiles/res.dir/src/character.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/res.dir/src/character.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kanja/projects/armageddonClash/src/character.cpp -o CMakeFiles/res.dir/src/character.cpp.s
-
-CMakeFiles/res.dir/src/game_window.cpp.o: CMakeFiles/res.dir/flags.make
-CMakeFiles/res.dir/src/game_window.cpp.o: /home/kanja/projects/armageddonClash/src/game_window.cpp
-CMakeFiles/res.dir/src/game_window.cpp.o: CMakeFiles/res.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kanja/projects/armageddonClash/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/res.dir/src/game_window.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/res.dir/src/game_window.cpp.o -MF CMakeFiles/res.dir/src/game_window.cpp.o.d -o CMakeFiles/res.dir/src/game_window.cpp.o -c /home/kanja/projects/armageddonClash/src/game_window.cpp
-
-CMakeFiles/res.dir/src/game_window.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/res.dir/src/game_window.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kanja/projects/armageddonClash/src/game_window.cpp > CMakeFiles/res.dir/src/game_window.cpp.i
-
-CMakeFiles/res.dir/src/game_window.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/res.dir/src/game_window.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kanja/projects/armageddonClash/src/game_window.cpp -o CMakeFiles/res.dir/src/game_window.cpp.s
-
-CMakeFiles/res.dir/src/lve_window.cpp.o: CMakeFiles/res.dir/flags.make
-CMakeFiles/res.dir/src/lve_window.cpp.o: /home/kanja/projects/armageddonClash/src/lve_window.cpp
-CMakeFiles/res.dir/src/lve_window.cpp.o: CMakeFiles/res.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kanja/projects/armageddonClash/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/res.dir/src/lve_window.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/res.dir/src/lve_window.cpp.o -MF CMakeFiles/res.dir/src/lve_window.cpp.o.d -o CMakeFiles/res.dir/src/lve_window.cpp.o -c /home/kanja/projects/armageddonClash/src/lve_window.cpp
-
-CMakeFiles/res.dir/src/lve_window.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/res.dir/src/lve_window.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kanja/projects/armageddonClash/src/lve_window.cpp > CMakeFiles/res.dir/src/lve_window.cpp.i
-
-CMakeFiles/res.dir/src/lve_window.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/res.dir/src/lve_window.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kanja/projects/armageddonClash/src/lve_window.cpp -o CMakeFiles/res.dir/src/lve_window.cpp.s
+CMakeFiles/res.dir/src/baseCharacter.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/res.dir/src/baseCharacter.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kanja/projects/armageddonClash/src/baseCharacter.cpp -o CMakeFiles/res.dir/src/baseCharacter.cpp.s
 
 CMakeFiles/res.dir/src/main.cpp.o: CMakeFiles/res.dir/flags.make
 CMakeFiles/res.dir/src/main.cpp.o: /home/kanja/projects/armageddonClash/src/main.cpp
 CMakeFiles/res.dir/src/main.cpp.o: CMakeFiles/res.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kanja/projects/armageddonClash/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/res.dir/src/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kanja/projects/armageddonClash/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/res.dir/src/main.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/res.dir/src/main.cpp.o -MF CMakeFiles/res.dir/src/main.cpp.o.d -o CMakeFiles/res.dir/src/main.cpp.o -c /home/kanja/projects/armageddonClash/src/main.cpp
 
 CMakeFiles/res.dir/src/main.cpp.i: cmake_force
@@ -127,22 +99,18 @@ CMakeFiles/res.dir/src/main.cpp.s: cmake_force
 
 # Object files for target res
 res_OBJECTS = \
-"CMakeFiles/res.dir/src/character.cpp.o" \
-"CMakeFiles/res.dir/src/game_window.cpp.o" \
-"CMakeFiles/res.dir/src/lve_window.cpp.o" \
+"CMakeFiles/res.dir/src/baseCharacter.cpp.o" \
 "CMakeFiles/res.dir/src/main.cpp.o"
 
 # External object files for target res
 res_EXTERNAL_OBJECTS =
 
-res: CMakeFiles/res.dir/src/character.cpp.o
-res: CMakeFiles/res.dir/src/game_window.cpp.o
-res: CMakeFiles/res.dir/src/lve_window.cpp.o
+res: CMakeFiles/res.dir/src/baseCharacter.cpp.o
 res: CMakeFiles/res.dir/src/main.cpp.o
 res: CMakeFiles/res.dir/build.make
 res: /usr/local/lib/libraylib.so.5.5.0
 res: CMakeFiles/res.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/kanja/projects/armageddonClash/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable res"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/kanja/projects/armageddonClash/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable res"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/res.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
