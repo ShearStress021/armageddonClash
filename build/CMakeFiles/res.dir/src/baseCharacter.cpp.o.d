@@ -1,7 +1,6 @@
-CMakeFiles/res.dir/src/lve_window.cpp.o: \
- /home/kanja/projects/armageddonClash/src/lve_window.cpp \
+CMakeFiles/res.dir/src/baseCharacter.cpp.o: \
+ /home/kanja/projects/armageddonClash/src/baseCharacter.cpp \
  /usr/include/stdc-predef.h \
- /home/kanja/projects/armageddonClash/src/../include/lve_window.h \
  /home/kanja/projects/armageddonClash/src/../include/baseCharacter.h \
  /usr/local/include/raylib.h \
  /usr/lib/gcc/x86_64-linux-gnu/14/include/stdarg.h \
@@ -186,5 +185,4 @@ CMakeFiles/res.dir/src/lve_window.cpp.o: \
  /usr/include/c++/14/bits/locale_facets.tcc \
  /usr/include/c++/14/bits/basic_ios.tcc \
  /usr/include/c++/14/bits/ostream.tcc /usr/include/c++/14/istream \
- /usr/include/c++/14/bits/istream.tcc \
- /home/kanja/projects/armageddonClash/src/../include/game_window.h
+ /usr/include/c++/14/bits/istream.tcc

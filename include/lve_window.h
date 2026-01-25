@@ -1,5 +1,5 @@
 #pragma once
-#include "character.h"
+#include "baseCharacter.h"
 #include "game_window.h"
 
 #define  MAP_ROWS 5
@@ -16,7 +16,7 @@ namespace game {
 			static constexpr int HEIGHT{920};
 			
 			void run();
-			void createTile(Character& player);
+			void createTile(BaseCharacter& player);
 			LiveWindow();
 			LiveWindow(const LiveWindow& )= delete;
 			LiveWindow & operator = (const LiveWindow& ) = delete;

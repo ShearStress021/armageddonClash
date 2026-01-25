@@ -1,4 +1,4 @@
-#include "lve_window.h"
+#include "../include/lve_window.h"
 #include <raylib.h>
 #include "raymath.h"
 #include <iostream>
@@ -14,9 +14,16 @@ namespace game {
 		Texture2D map = LoadTexture("data/bg/bg_layer1.png");
 
 		Vector2 mapPosition{};
-		Character player{WIDTH,HEIGHT};
+		BaseCharacter player{WIDTH,HEIGHT};
 
-		createTile(player);
+	 	Vector2 pos{
+		          0.f,
+		          HEIGHT - player.tex.height * 3.f
+		      };
+
+
+		player.setCharacterPosition(pos);
+
 
 
 		while(!gameWindow.shouldClose())
@@ -26,11 +33,10 @@ namespace game {
 		    BeginDrawing();
 				ClearBackground(WHITE);
 
-				mapPosition = Vector2Scale(player.getWorldPosition(), -1.0f);
 
-				DrawTextureEx(map, mapPosition,0.f, 4.f, WHITE);
+				player.drawPlayer(deltaTime);
 
-				player.drawCharacter(deltaTime);
+
 				
 
 
@@ -42,7 +48,7 @@ namespace game {
 		}
 	}
 
-	void LiveWindow::createTile(Character &player){
+	void LiveWindow::createTile(BaseCharacter &player){
 
 		short map[MAP_ROWS][MAP_COLS] = {
 			0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -68,7 +74,6 @@ namespace game {
 								static_cast<float>(HEIGHT - (MAP_ROWS - r) * player.tex.height * 4 )
 							};
 
-							player.setCharacterPosition(characterPosition);
 							
 							
 							break;
