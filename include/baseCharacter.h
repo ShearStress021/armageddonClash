@@ -1,6 +1,7 @@
 #pragma once
 #include "raylib.h"
 #include "raymath.h"
+#include "string"
 #define WINDOWWIDTH 1200
 #define WINDOWHEIGHT 920
 
@@ -46,6 +47,7 @@ class BaseCharacter {
 		void makeAnimation(float deltaTime);
 		void updateData();
 		bool isOnGround();
+		std::string get_state(BaseCharacterState state);
 		~BaseCharacter();
 
 

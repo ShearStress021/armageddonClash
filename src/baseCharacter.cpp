@@ -50,6 +50,10 @@ void BaseCharacter::characterMovement(float deltaTime)
 					animationNumber = 4.f;
 					tex = texRun;
 				}
+				else 
+				{
+					velocity.x = 0;
+				}
 				break;
 			}
 
@@ -70,10 +74,14 @@ void BaseCharacter::characterMovement(float deltaTime)
 
 	if (std::abs(velocity.x) > maxSpeedX)
 	{
-		velocity.x = currentDirection * speed;
+		velocity.x = currentDirection * speed ;
 	}
 
 	characterPosition.x += velocity.x * deltaTime;
+
+	std::string strState = "player state ";
+	strState.append(get_state(state));
+	DrawText(strState.c_str(), 100,0, 20, BLUE);
 
 	characterJumping(deltaTime);
 }
@@ -143,12 +151,24 @@ void BaseCharacter::makeAnimation(float deltaTime)
 		frame ++;
 		runningTime = 0.f;
 
-		if(frame > maxFrames) frame = 0;
+		if(frame > animationNumber) frame = 0;
 
 	}
 }
 
 void BaseCharacter::updateData() {
+}
+
+std::string BaseCharacter::get_state(BaseCharacterState state)
+{
+	switch(state)
+	{
+		case BaseCharacterState::running : return "running";
+		case BaseCharacterState::idle: return "idle";
+		case BaseCharacterState::jumping: return "jumping";
+
+	}
+
 }
 
 

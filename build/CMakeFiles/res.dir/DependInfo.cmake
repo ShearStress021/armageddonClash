@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/kanja/projects/armageddonClash/src/baseCharacter.cpp" "CMakeFiles/res.dir/src/baseCharacter.cpp.o" "gcc" "CMakeFiles/res.dir/src/baseCharacter.cpp.o.d"
   "/home/kanja/projects/armageddonClash/src/main.cpp" "CMakeFiles/res.dir/src/main.cpp.o" "gcc" "CMakeFiles/res.dir/src/main.cpp.o.d"
+  "" "res" "gcc" "CMakeFiles/res.dir/link.d"
   )
 
 # Targets to which this target links which contain Fortran sources.
