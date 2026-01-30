@@ -1,4 +1,4 @@
-#include "lve_window.h"
+#include "../include/lve_window.h"
 #include <cstdlib>
 #include <iostream>
 
